@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina</title>
+</head>
+<body>
+
+    <h1>PROGRAMA DE ADIVINACION </h1>
+
+
+    <Script>
+
+        // Funcion salto de linea
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+        
+        
+        //Funcion Imprimir Texto
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+        }
+        
+        
+        let numeroPensado = Math.round(Math.random()*10);
+        let numeroLanzado = parseInt(prompt("Ingrese un número entre 0 - 10"));
+        
+        if(numeroPensado == numeroLanzado){
+        imprimir("Usted acertó")
+        }
+        else{
+            imprimir("No acerto, el numero correcto era " + numeroPensado)
+        }
+        
+</script>
+
+<h1>____________________________________________________________</h1>
+<h1>PROGRAMA AÑO MUNDIAL</h1>
+
+<script>
+
+            function saltarLinea()
+            {
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<br>");
+            }
+
+
+
+         //Funcion Imprimir Texto
+            function imprimir(frase1)
+            {
+                document.write(frase1);
+                saltarLinea()
+            }
+
+
+            let ahoActual = Date();
+            let ahoMundialPast = 1930;
+            let ingresarAho = parseInt(prompt("Ingresa el año para calcular si hubo mundial"))
+
+            while (ahoMundialPast <= ingresarAho) 
+            {
+            ahoMundialPast = ahoMundialPast + 4;
+            }
+
+            imprimir("Hubo Mundial de la FIFA en el año " + ahoMundialPast)
+            imprimir(ahoActual)
+            imprimir("Fin")
+           
+
+</script>
+
+</body>
+</html>
+
